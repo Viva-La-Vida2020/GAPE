@@ -1,0 +1,26 @@
+dataset:
+  dataset_name: "sevir"
+  img_height: 384
+  img_width: 384
+  batch_size: 16
+  in_len: 9
+  out_len: 20
+  seq_len: 29
+  plot_stride: 2
+  interval_real_time: 5
+  sample_mode: "sequent"
+  stride: 5
+  layout: "NTHWC"
+  rescale_method: null
+  start_date: null
+  train_val_split_date: [2019, 1, 1]
+  train_test_split_date: [2019, 6, 1]
+  end_date: null
+  metrics_mode: "0"
+#  metrics_list: ['csi', 'pod', 'sucr', 'bias']
+  metrics_list: ['csi']
+  threshold_list: [16, 74, 133, 160, 181, 219]
+layout:
+  in_len: 9
+  out_len: 20
+  layout: "NTHWC"
